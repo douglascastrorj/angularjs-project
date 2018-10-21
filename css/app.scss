@@ -1,0 +1,25 @@
+body{
+	margin:0;
+	padding: 0;
+	font-family: $font-stack;
+	// background: url(../../img/background.jpg);
+	background: #fff;
+	// background-color: $primary-color-dark;
+
+
+	.loading-content {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		font-size: 18em;
+		
+		.loading {
+			background:	url(../../img/loading5.gif);
+			height: 200px;
+			width: 200px;
+			margin-top: 5px;
+		}
+	}
+	
+
+}

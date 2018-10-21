@@ -1,0 +1,46 @@
+<div id="formulario">
+
+    <div class="content">
+        <div class="form-title">
+            <h3>
+                Preencha seus dados
+            </h3>
+        </div>
+
+        <form>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault01">Nome Completo</label>
+                    <input ng-model="usuario.nome" type="text" class="form-control" id="validationDefault01" placeholder="Nome completo"
+                        required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input ng-model="usuario.email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Preencha seu email">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault04">Data de Nascimento</label>
+                    <input ng-model="usuario.nascimento" type="text" class="form-control" id="datepicker" placeholder="11/11/1111" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault03">CPF</label>
+                    <input ng-model="usuario.cpf" type="text" class="form-control cpf" id="validationDefault03" placeholder="99999999999" required>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault05">Telefone</label>
+                    <input ng-model="usuario.telefone" type="text" class="form-control tel" id="validationDefault05" placeholder="(99) 9999-9999"
+                        required>
+                </div>
+            </div>
+
+
+            <span ng-show="hasErrors" class="badge badge-pill badge-danger" style="margin-bottom: 10px;"> Informações inválidas, por favor verifique se todos os dados foram preenchidos corretamente.</span>
+            <button ng-click="submit()"  class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+    </div>
+
+</div>

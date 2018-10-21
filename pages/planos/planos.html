@@ -1,0 +1,43 @@
+<div id="planos">
+
+    <div class="header">
+        <h4>
+            Selecione um Plano
+        </h4>
+    </div>
+
+    <div class="content">
+
+        <div ng-repeat="plano in planos">
+            <div class="pricing">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-muted text-uppercase text-center">{{plano.franquia}}</h5>
+                        <h6 class="card-price text-center">R$ {{plano.valor}}<span class="period">/mês</span></h6>
+                        <hr>
+                        <ul class="fa-ul" ng-if="plano.aparelho != undefined">
+                            <li class="text-muted"><span class="fa-li"><i class="fas fa-check"></i></span>{{plano.aparelho.nome}}</li>
+                            <li class="text-muted"><span class="fa-li"><i class="fas fa-check"></i></span>R$
+                                {{plano.aparelho.valor}}</li>
+                            <li class="text-muted"><span class="fa-li"><i class="fas fa-check"></i></span>Parcele em
+                                até {{plano.aparelho.numeroParcelas}} vezes</li>
+                            <li class="text-muted"><span class="fa-li"><i class="fas fa-check"></i></span>Valor da
+                                parcela R${{plano.aparelho.valorParcela}}</li>
+                        </ul>
+                        <a href="#!/formulario/{{plano.sku}}" class="btn btn-block btn-primary text-uppercase">Selecionar</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div ng-if="loading" class="loading-content">
+            <h5> Carregando... </h5>
+            <div class="loading"></div>
+        </div>
+
+
+    </div>
+
+</div>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="jiffApp">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Angularjs</title>
+	<link rel='stylesheet' id='fonts-css'  href='//fonts.googleapis.com/css?family=Lato:100,400,700,600,400italic,600italic,700italic' media='all' />
+	<link rel="stylesheet" type="text/css" href="dist/app.min.css">
+
+	
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/jquery.mask.js"></script>
+
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+
+<div ng-view></div>
+
+<!--Angular Files-->
+<script type="text/javascript" src="dist/lib.min.js"></script>
+
+<!-- App Files-->
+<script type="text/javascript" src="dist/app.min.js"></script>
+
+<!-- Controllers -->
+<script type="text/javascript" src="pages/dashboard/dashboard.js"></script>
+<script type="text/javascript" src="pages/planos/planos.js"></script>
+<script type="text/javascript" src="pages/formulario/formulario.js"></script>
+
+<!-- Services -->
+<script type="text/javascript" src="services/programService.js"></script>
+<script type="text/javascript" src="services/plataformaService.js"></script>
+<script type="text/javascript" src="services/planosService.js"></script>
+<script type="text/javascript" src="services/validarService.js"></script>
+</body>
+</html>
