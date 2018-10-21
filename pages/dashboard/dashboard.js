@@ -1,4 +1,4 @@
-angular.module('dashboard',['programService', 'PlataformaModule'])
+angular.module('dashboard',['PlataformaModule'])
 .component('dashboard', {
 	templateUrl: "pages/dashboard/dashboard.html",
 	controller: [  'PlataformaService', '$scope', function( PlataformaService, $scope){

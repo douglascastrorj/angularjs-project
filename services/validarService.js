@@ -14,7 +14,7 @@ angular.module('ValidadorModule', [])
                 return false;
             }
 
-            return str.length > minLength;
+            return str.length >= minLength;
 
         }
 
