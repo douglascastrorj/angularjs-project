@@ -18,7 +18,6 @@ angular.module('PlanosModule', [])
     this.getPlanos = function(sku){ 
         const url = API + sku;
     	return $http.get(url).then(function(res){
-            console.log(res.data.planos)
             return res.data.planos;
     	});
     }

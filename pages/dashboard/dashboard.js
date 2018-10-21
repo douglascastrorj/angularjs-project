@@ -12,10 +12,8 @@ angular.module('dashboard',['PlataformaModule'])
 		};		
 
 		self.carregarPlataformas = function () {
-			console.log('carregou controller');
 			PlataformaService.getPlataformas().then(function(plataformas){
 				$scope.plataformas = plataformas;
-				console.log('resgatadas', plataformas)
 				$scope.loading = false;
 			});	
 		}

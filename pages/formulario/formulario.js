@@ -45,7 +45,6 @@ angular.module('formulario', ['ValidadorModule'])
             });
 
             const sku = $routeParams.sku;
-            console.log("carregou controller de formulario", sku);
         };
 
 
