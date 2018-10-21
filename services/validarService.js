@@ -25,6 +25,8 @@ angular.module('ValidadorModule', [])
 
         function validarCpf(strCPF) {
 
+            if(!strCPF)
+                return false;
 
             strCPF = strCPF.replace(/\./gi, "");
             strCPF = strCPF.replace(/\-/gi, "");
