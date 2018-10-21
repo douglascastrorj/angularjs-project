@@ -11,6 +11,14 @@
         margin-bottom: 20vh;
     }
 
+    .list-title {
+        list-style: none;
+        color: #4DA3FF !important;
+        font-weight: bold;
+        text-align: center;
+        margin-left: -10px;
+    }
+
     .content {
         display: flex;
         flex-direction: row;
